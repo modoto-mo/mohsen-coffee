@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="image-83-910x600.jpg.webp">
+    <title> کافه محسن </title>
+    <link id="dark-mode" rel="stylesheet" href="style dark.css">
+    <link id="light-mode" rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="products-container"></div>
+
+    <div class="light-cont">
+        <button id="powerButton" class="light-button" onclick="toggleTheme()">
+            <img class="img-dark" src="download.png" alt="light">
+            <img class="img-light" src="light-mode.webp" alt="dark">
+        </button>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        fetch('data.json')
+            .then(function(res) {
+                return res.json();
+            })
+            .then(function(data) {
+                var container = document.getElementById('products-container');
+                var html = '';
+                for (var i = 0; i < data.products.length; i++) {
+                    var p = data.products[i];
+                    var price = Number(p.price).toLocaleString();
+                    html += '<div class="pruduct">';
+                    html += '<img src="' + p.image + '" alt="' + p.name + '">';
+                    html += '<h3> ' + p.name + ' </h3>';
+                    html += '<p class="sad"> موجود </p>';
+                    html += '<button class="pruduct">';
+                    html += '<b>' + price + ' ریال</b>';
+                    html += '</button>';
+                    html += '</div>';
+                }
+                container.innerHTML = html;
+            })
+            .catch(function(err) {
+                console.log('خطا:', err);
+            });
+    </script>
+</body>
+</html>
