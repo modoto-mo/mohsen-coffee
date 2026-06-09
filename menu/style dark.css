@@ -146,159 +146,159 @@ body {
 /* media */
 @media (max-width: 768px){
     body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #1f1f1f;
-    font-family: Arial, sans-serif;
-    transition: all 0.3s;
-    gap: 35px;
-}
-.pruduct{
-    display: flex;
-    align-items: center;
-    background-color: #343434;
-    justify-content: center;
-    padding: 13px ;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 30px;
-    transition: all 0.3s;
-
-}
-.pruduct:hover{
-    transform: translateY(-7px);
-    box-shadow: 0 5px 25px rgba(152, 152, 152, 0.9);
-}
-.pruduct img{
-    width: 170px;
-    height: 170px;
-    box-shadow: 0 5px 20px rgba(60, 118, 233, 0.9);
-    border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #1f1f1f;
+        font-family: Arial, sans-serif;
+        transition: all 0.3s;
+        gap: 35px;
+    }
+    .pruduct{
+        display: flex;
+        align-items: center;
+        background-color: #343434;
+        justify-content: center;
+        padding: 13px ;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 30px;
+        transition: all 0.3s;
     
-}
-
-.pruduct h3{
-    margin: 0;
-    color: rgb(255, 255, 255);
-
-}
-.pruduct .stock{
-    color: red;
-    margin: 0;
-    font-size: 20px;
-    text-decoration: line-through;
+    }
+    .pruduct:hover{
+        transform: translateY(-7px);
+        box-shadow: 0 5px 25px rgba(152, 152, 152, 0.9);
+    }
+    .pruduct img{
+        width: 170px;
+        height: 170px;
+        box-shadow: 0 5px 20px rgba(60, 118, 233, 0.9);
+        border-radius: 5%;
+        
+    }
     
-}
-.pruduct .kkhat {
-    color: red;
-    font-size: 20px;
-    text-decoration: underline;
-
-}
-
-.pruduct .sad{
-    font-size: 19px;
-    margin: 0;
-    color:rgb(136, 135, 135);
-
-}
-
-.pruduct button {
-    background-color: steelblue;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(64, 100, 219, 0.9);
-}
-
-.pruduct button:hover {
-    background-color: tomato;
-    transform: translateY(-6px) scale(1.1) translateZ(10px);
-    box-shadow: 0 5px 20px rgba(174, 50, 50, 0.9);
-}
-
-.pruduct button:active {
-    background-color: crimson;
-    transform: translateY(6px) scale(0.9);
-    box-shadow: none;
-}
-.light-cont {
-    position: fixed;
-    bottom: 7px;
-    left: 7px;
-    z-index: 999;
-    background-color:transparent ;
-    transition: all 0.3s;
-    width: 110px;
-    height: 110px;
-}
-.light-button {
-    background-color: rgb(80, 80, 80);
-    padding: 50px 50px;
-    font-size: 24px;
-    border-radius: 100%;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.9);
-    transition: all 0.3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-}
-.light-button:hover {
-    transition: all 0.3s ease;
-    transform: translateY(-5px) scale(1.03);
+    .pruduct h3{
+        margin: 0;
+        color: rgb(255, 255, 255);
     
-}
-.light-button:active{
-    transition: all 0.3s;
-    background-color: rgb(160, 160, 160);
-    transform: translateY(5px)scale(0.97);
+    }
+    .pruduct .stock{
+        color: red;
+        margin: 0;
+        font-size: 20px;
+        text-decoration: line-through;
+        
+    }
+    .pruduct .kkhat {
+        color: red;
+        font-size: 20px;
+        text-decoration: underline;
     
-}
-.img-light{
-    display: none;
-}
-.img-dark{
-    display: block;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    border-radius: 100%;
-}
-
-.input-cont{
-    width: 10px;
-    height: 20px;
-}
-
-.light-cont {
-    width: 50px;
-    height: 50px;
-    bottom: 10px;
-    left: 10px;
-}
-
-.light-button {
-    width: 10px;
-    height: 10px;
-    padding: 0;
-}
-
-.img-dark {
-    width: 80px;
-    height: 80px;
-}
+    }
+    
+    .pruduct .sad{
+        font-size: 19px;
+        margin: 0;
+        color:rgb(136, 135, 135);
+    
+    }
+    
+    .pruduct button {
+        background-color: steelblue;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px rgba(64, 100, 219, 0.9);
+    }
+    
+    .pruduct button:hover {
+        background-color: tomato;
+        transform: translateY(-6px) scale(1.1) translateZ(10px);
+        box-shadow: 0 5px 20px rgba(174, 50, 50, 0.9);
+    }
+    
+    .pruduct button:active {
+        background-color: crimson;
+        transform: translateY(6px) scale(0.9);
+        box-shadow: none;
+    }
+    .light-cont {
+        position: fixed;
+        bottom: 7px;
+        left: 7px;
+        z-index: 999;
+        background-color:transparent ;
+        transition: all 0.3s;
+        width: 110px;
+        height: 110px;
+    }
+    .light-button {
+        background-color: rgb(80, 80, 80);
+        padding: 50px 50px;
+        font-size: 24px;
+        border-radius: 100%;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.9);
+        transition: all 0.3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+    }
+    .light-button:hover {
+        transition: all 0.3s ease;
+        transform: translateY(-5px) scale(1.03);
+        
+    }
+    .light-button:active{
+        transition: all 0.3s;
+        background-color: rgb(160, 160, 160);
+        transform: translateY(5px)scale(0.97);
+        
+    }
+    .img-light{
+        display: none;
+    }
+    .img-dark{
+        display: block;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 100%;
+    }
+    
+    .input-cont{
+        width: 10px;
+        height: 20px;
+    }
+    
+    .light-cont {
+        width: 50px;
+        height: 50px;
+        bottom: 10px;
+        left: 10px;
+    }
+    
+    .light-button {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+    }
+    
+    .img-dark {
+        width: 80px;
+        height: 80px;
+    }
 
 }
