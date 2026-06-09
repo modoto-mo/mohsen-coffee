@@ -146,6 +146,7 @@ body {
         font-family: Arial, sans-serif;
         transition: all 0.3s;
         gap: 35px;
+        flex-warp: warp ;
     }
 
     .pruduct{
