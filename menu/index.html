@@ -40,6 +40,10 @@
                     html += '</div>';
                 }
                 container.innerHTML = html;
+                container.style.display = 'flex';
+                container.style.flexWrap = 'wrap';
+                container.style.justifyContent = 'center';
+                container.style.gap = '25px';
             })
             .catch(function(err) {
                 console.log('خطا:', err);
