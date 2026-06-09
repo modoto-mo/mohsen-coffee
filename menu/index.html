@@ -20,7 +20,7 @@
     
     <script src="script.js"></script>
     <script>
-        fetch('data.json')
+        fetch('data.json?t=' + new Date().getTime())
             .then(function(res) {
                 return res.json();
             })
