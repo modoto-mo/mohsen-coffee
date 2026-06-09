@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "قهوه دبل ",
+      "image": "download.jfif",
+      "price": 700000
+    },
+    {
+      "id": 2,
+      "name": "ویتامین c",
+      "image": "c vitamin.jfif",
+      "price": 450000
+    }
+  ]
+}
