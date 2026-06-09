@@ -57,6 +57,7 @@ let githubToken = '';
 let repoOwner = '';
 let repoName = '';
 const DATA_PATH = 'menu/data.json';
+const REPO_NAME = 'mohsen-coffee';
 
 function login() {
     const password = document.getElementById('adminPassword').value;
@@ -78,8 +79,7 @@ function login() {
     .then(user => {
         if (user.login) {
             repoOwner = user.login;
-            repoName = prompt('اسم مخزن گیت‌هاب؟\n(مثلاً: my-coffee-menu)', '');
-            if (!repoName) return;
+            repoName = REPO_NAME
             
             document.getElementById('repoInfo').textContent = 
                 `👤 کاربر: ${repoOwner} | 📁 مخزن: ${repoName} | مسیر فایل: ${DATA_PATH}`;
