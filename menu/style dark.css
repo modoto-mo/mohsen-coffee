@@ -169,8 +169,8 @@ body {
         transition: all 0.3s;
 
         /* de */
-        width:41%;
-        min-width:140px;
+        width:10%;
+        min-width:120px;
         flex: 0 0 auto ;
     
     }
