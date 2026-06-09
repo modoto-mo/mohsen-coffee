@@ -104,7 +104,7 @@ async function loadFromGitHub() {
         );
         const data = await res.json();
         fileSha = data.sha;
-        const content = JSON.parse(atob(data.content));
+        const content = JSON.parse(decodeURIComponent(escape(atob(data.content))));
         products = content.products || [];
         renderProducts();
     } catch (e) {
